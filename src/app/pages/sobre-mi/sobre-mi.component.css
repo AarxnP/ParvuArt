@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  .image-section img {
+    max-width: 300px;
+    border-radius: 15px;
+  }
+  
+  .text-section {
+    padding-left: 20px;
+  }
+  
+  .title {
+    color: #2b8ecf;
+    font-weight: bold;
+  }
+  
+  .name {
+    color: #e91e63;
+    font-size: 24px;
+  }
+  
+  .description {
+    color: #555;
+    font-size: 16px;
+  }
+  
+  .social-icons a {
+    font-size: 20px;
+    margin: 10px;
+    color: #444;
+  }
+  
+  .social-icons a:hover {
+    color: #e91e63;
+  }
+  

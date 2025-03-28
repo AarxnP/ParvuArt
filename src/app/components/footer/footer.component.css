@@ -1,0 +1,26 @@
+/* Estilos para el footer */
+.footer {
+    background-color: #ffffff; /* Fondo azul */
+    color: rgb(0, 0, 0); /* Color de texto blanco */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Estilo para el texto del copyright */
+  .footer p {
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  /* Efecto al pasar el mouse sobre el texto */
+  .footer p:hover {
+    color: #e91e63; /* Cambio de color al pasar el mouse */
+    cursor: pointer;
+  }
+  

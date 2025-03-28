@@ -1,0 +1,19 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+      <li class="breadcrumb-item"><a routerLink="/products">Productos</a></li>
+    </ol>
+  </nav>
+
+<div class="container-fluid text-center">
+    <h1>{{product!.title}}</h1>
+    <div class="row">
+        <div class="col-md-5">
+            <img [src]="product!.image" class="card-img-top p-3"/>
+            </div>
+        <div class="col-md-7">
+            <p>{{product!.desciption}}</p>
+            <a routerLink="/products" class="btn btn-primary"></a>
+        </div>
+    </div>
+</div>

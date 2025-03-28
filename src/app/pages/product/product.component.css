@@ -1,0 +1,54 @@
+.container-fluid {
+    padding: 40px;
+    background: linear-gradient(to bottom, #f8f9fa, #e3f2fd);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 600;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.col-md-7 p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.btn-primary {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #0056b3, #004085);
+    transform: scale(1.05);
+}

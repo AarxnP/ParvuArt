@@ -1,0 +1,91 @@
+/* Contenedor del formulario */
+.container-fluid.text-center {
+    width: 40%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+/* Campos de entrada */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.6);
+}
+
+/* Mensajes de error */
+.form-text.text-danger {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Botón de inicio/registro */
+.btn-primary {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #0056b3, #004085);
+    transform: scale(1.05);
+}
+
+/* Botón de Google */
+.btn-success {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #34a853, #0f9d58);
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+    background: linear-gradient(45deg, #0f9d58, #0a7d3a);
+    transform: scale(1.05);
+}
+
+/* Icono de Google */
+ng-icon[name="google"] {
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Enlace para cambiar entre login y registro */
+.link-primary {
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.link-primary:hover {
+    color: #0056b3;
+}
+
+/* Alerta de error */
+.alert-danger {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 0, 0, 0.2);
+    color: red;
+    text-align: center;
+}

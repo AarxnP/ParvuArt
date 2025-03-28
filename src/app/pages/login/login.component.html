@@ -1,0 +1,57 @@
+<div class="container-fluid text-center" style="width: 40%;">
+    <form class="d-flex flex-column gap-3" [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="email" formControlName="email" aria-describedby="emailHelp">
+        @if((email?.hasError("required") || email?.hasError("email")) && email?.touched){
+          <div id="emailHelp" class="form-text text-danger">
+            Correo no valido
+          </div>
+        }
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password" formControlName="password">
+        @if((password?.hasError("required") || password?.hasError("minlength")) && password?.touched){
+          <div id="passwordHelp" class="form-text text-danger">
+            La contraseña debe tener al menos 6 caracteres
+          </div>
+        }
+      </div>
+
+      @if(showRegister){ 
+        <div>
+          <label for="confirmpassword" class="form-label">Confirmar Contraseña</label>
+          <input formControlName="confirmpassword" type="password" class="form-control" id="password" formControlName="password">
+          @if(confirmPassword?.hasError("confirmPassword") && confirmPassword?.touched){
+            <div id="passwordHelp" class="form-text text-danger">
+              Las contraseñas no coinciden
+            </div>
+          }
+        </div>
+      }
+      
+      <button type="submit" style="width: 50%;" class="btn btn-primary mx-auto">
+        {{ showRegister ? 'Regístrate' : 'Inicia Sesión' }}
+      </button>
+      <div class="d-flex justify-content-center align-items-center">
+      <button type="button" class = "btn btn-success" (click)="registerWithGoogle()">Iniciar sesion google</button>
+      <ng-icon name = "google"></ng-icon>
+    </div>
+      <span>
+        No tienes una cuenta? 
+        <a class="link-primary" (click)="toggleRegister()">
+          {{ showRegister ? 'Inicia Sesión' : 'Regístrate' }}
+        </a>
+      </span>
+      @if(errorMessage){
+        <div class="alert alert-danger">
+          {{errorMessage}}
+        </div>
+      }
+      <div>
+        <a></a>
+      </div>
+    </form>
+  </div>
+  
