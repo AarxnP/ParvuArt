@@ -1,117 +1,159 @@
+/* Estilo para la imagen en pantallas pequeñas */
 .container {
-    display: flex;
-    align-items: center;
-    background: #fff;
-    padding: 20px;
-    border-radius: 15px;
-  }
-  
-  .image-section img {
-    max-width: 300px;
-    border-radius: 15px;
-  }
-  
-  .text-section {
-    padding-left: 20px;
-  }
-  
-  .title {
-    color: #2b8ecf;
-    font-weight: bold;
-  }
-  
-  .name {
-    color: #e91e63;
-    font-size: 24px;
-  }
-  
-  .description {
-    color: #555;
-    font-size: 16px;
-  }
-  
-  .social-icons a {
-    font-size: 20px;
-    margin: 10px;
-    color: #444;
-  }
-  
-  .social-icons a:hover {
-    color: #e91e63;
-  }
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+}
 
+.image-section img {
+  max-width: 300px;
+  border-radius: 15px;
+}
 
-  
-  .section {
-    padding: 40px 10%;
-  }
-  
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .image-section img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 20px;
-  }
-  
-  .text-section {
-    max-width: 50%;
-  }
-  
-  .text-right {
-    text-align: right;
-  }
-  
-  .text-left {
-    text-align: left;
-  }
-  
- /* Estilo para los títulos de las secciones (Misión, Visión) */
+.text-section {
+  padding-left: 20px;
+  text-align: justify;
+}
+
+.title {
+  color: #2b8ecf;
+  font-weight: bold;
+}
+
+.name {
+  color: #e91e63;
+  font-size: 24px;
+}
+
+.description {
+  color: #555;
+  font-size: 16px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  margin: 10px;
+  color: #444;
+}
+
+.social-icons a:hover {
+  color: #e91e63;
+}
+
+.section {
+  padding: 40px 10%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.image-section img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.text-section {
+  max-width: 50%;
+  text-align: justify;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
 h2 {
-  font-family: 'Roboto', sans-serif; /* O cualquier otra tipografía moderna */
-  font-weight: 700; /* Negrita */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   font-size: 28px;
   color: #333;
   letter-spacing: 1px;
   margin-bottom: 15px;
+  text-align: justify;
 }
 
-/* Estilo para los párrafos de las secciones (Misión, Visión) */
 p {
   font-family: 'Arial', sans-serif;
   color: #666;
   font-size: 18px;
   line-height: 1.6;
   margin-top: 10px;
+  text-align: justify;
 }
 
-/* Añadir un toque visual con sombras o resaltar la parte importante */
 p strong {
-  color: #2b8ecf; /* Color para resaltar texto importante */
+  color: #2b8ecf;
   font-weight: bold;
 }
 
-/* Ajustar el espaciado y el estilo del contenedor de cada sección */
 .section {
   padding: 60px 15%;
-  background-color: #f4f4f4; /* Color de fondo suave */
+  background-color: #f4f4f4;
 }
 
-/* Hacer que el texto de la misión y visión se vea más visualmente atractivo */
 .text-section h2 {
-  font-size: 32px; /* Aumenta el tamaño de los títulos */
+  font-size: 32px;
   font-family: 'Roboto', sans-serif;
   color: #2b8ecf;
 }
 
 .text-section p {
-  font-size: 18px; /* Aumenta ligeramente el tamaño del texto */
+  font-size: 18px;
   line-height: 1.8;
   color: #555;
   margin-top: 10px;
+  text-align: justify;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Aumentar el tamaño de la imagen en pantallas pequeñas */
+  .image-section img {
+    max-width: 100%; /* Ocupa el 100% del contenedor */
+    max-height: 500px; /* Aumentar la altura máxima de la imagen */
+  }
+
+  .text-section {
+    max-width: 100%;
+    text-align: justify;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .social-icons a {
+    font-size: 18px;
+  }
 }

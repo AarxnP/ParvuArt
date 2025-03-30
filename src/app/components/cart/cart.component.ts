@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CartService } from '../../service/cart/cart.service';
 import { Product } from '../../types/products';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-cart',
@@ -11,7 +12,7 @@ import { Product } from '../../types/products';
 })
 export class CartComponent {
 
-  constructor(private CartService: CartService) { }
+  constructor(private CartService: CartService, private router: Router) { }
 
   getProducts() {
     return this.CartService.getProducts()
@@ -27,5 +28,8 @@ export class CartComponent {
 
   getTotal() {
     return this.CartService.getTotal()
+  }
+  goToCheckout() {
+    this.router.navigate(['/product-form']);
   }
 }

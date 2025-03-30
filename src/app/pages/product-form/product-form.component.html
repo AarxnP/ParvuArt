@@ -1,0 +1,40 @@
+<div class="container-fluid p-4" style="max-width: 900px; background-color: white; border: 1px solid #ccc;">
+    <div class="row">
+        <!-- Sección 2: Información de Comprobante -->
+        <div class="col-md-6 p-3" >
+            <h4 class="text-center">INFORMACIÓN DE COMPROBANTE</h4>
+            <div class="mb-3 p-2" >
+                <label class="form-label">Cuenta Destino</label>
+                <p><strong>Banco Pichincha:</strong> 221168412 </p>
+                <div class="mb-3 text-center">
+                    <label class="form-label">Escanear QR Banco Pichincha:</label>
+                    <br>
+                    <img src="QR.jpg" alt="QR" style="max-width: 200px; border-radius: 8px;">
+                </div>
+                <p><strong>Banco Guayaquil:</strong> 00003568935</p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Valor Transacción:</label>
+                <input type="text" class="form-control" placeholder="Ingrese el valor total">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Fecha Transacción:</label>
+                <input type="date" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Imagen Transacción:</label>
+                <input type="file" class="form-control">
+                <div class="mt-2 text-center">
+                    <button class="btn btn-primary">Cargar Imagen</button>
+                </div>
+            </div>            
+            <div class="mb-3">
+                <label class="form-label">OBSERVACIONES:</label>
+                <textarea class="form-control" rows="2"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-3">
+        <button class="btn btn-secondary">Guardar Depósito</button>
+    </div>
+</div>
